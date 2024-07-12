@@ -1,2 +1,5 @@
 enviar_email_django/venv/
 enviar_email_django/db.sqlite3
+geracao_gerenciamento_manual_token_django/venv/
+geracao_gerenciamento_manual_token_django/.env
+geracao_gerenciamento_manual_token_django/db.sqlite3
