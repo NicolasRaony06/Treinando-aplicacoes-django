@@ -63,7 +63,7 @@ def reset_password(request):
 
             token.save()
 
-            send_mail("Código para Resetar Senha", f"O seu código para resetar sua senha é {email_token_code}.", "nrdq59443@gmail.com", [f'{user_email}'])
+            send_mail("Código para Resetar Senha", f"O seu código para resetar sua senha é {email_token_code}.", "--", [f'{user_email}']) #TODO add email.
 
             return redirect(f'/users/receive_token/{user_email}')
 
