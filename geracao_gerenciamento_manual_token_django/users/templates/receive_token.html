@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receive Token</title>
+</head>
+<body>
+    <form action="{% url "receive_token" user_email %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="email_token_code" placeholder="code">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
